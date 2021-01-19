@@ -18,12 +18,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 50px;
+  font-size: 1.2rem;
 }
 
 .main {
-  display: grid;
-  grid-template-columns: 3px 1fr 3px;
   background-color: #fff;
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
 }
 .line {
   width: 3px;
@@ -34,8 +35,6 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .names-wrapper {
-  display: grid;
-  grid-template-columns: 3px 1fr 3px;
   text-align: center;
 }
 .names {
@@ -43,6 +42,9 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   line-height: 50px;
   font-size: 1.5rem;
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
+  /* border-top: 1px solid rgb(240, 240, 240); */
 }
 
 .footer {
@@ -53,7 +55,8 @@ body {
 }
 
 .btn, .btn-reset {
-  padding: .5rem 1rem;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
   background-color: rgb(72, 121, 253);
   color: #fff;
   border: none;
