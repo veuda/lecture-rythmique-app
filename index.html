@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Lecture rythmique</title>
 </head>
+
 <body>
-  <main class="home">
+  <main class="exercice-rythme">
+
     <div class="wrapper">
+
       <div class="header">
-        <div class="header-wrapper">
-          <label for="noire">Noires</label>
-          <input type="checkbox" name="noire" id="noires" checked>
-          <label for="noire">Croches</label>
-          <input type="checkbox" name="croches" id="croches" checked>
-          <!-- <label for="noire">Doubles croches</label>
+        <label for="noire">Noires</label>
+        <input type="checkbox" name="noire" id="noires" class="checkbox" checked>
+        <label for="noire">Croches</label>
+        <input type="checkbox" name="croches" id="croches" class="checkbox" checked>
+        <!-- <label for="noire">Doubles croches</label>
           <input type="checkbox" name="doubles-croches" id="doubles-croches"> -->
-        </div>
       </div>
+
       <div class="main">
         <div class="images"></div>
       </div>
-      <div class="names-wrapper">
-        <div class="names"></div>
-      </div>
+
+      <div class="names"></div>
+
       <div class="footer">
         <!-- <button class="btn">ECOUTER</button> -->
         <button class="btn-reset">NOUVELLE MESURE</button>
       </div>
+
     </div>
+
   </main>
   <script src="./app.js"></script>
 </body>
+
 </html>
