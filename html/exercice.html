@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>COURS DE MUSIQUE</title>
+</head>
+
+<body>
+  <aside class="menu">
+    <i class="fas fa-bars menu-icon"></i>
+    <a href="../index.html" class="link-home bold">COURS DE MUSIQUE</a>
+    <div class="menu-label bold">
+      Solfège
+    </div>
+    <ul class="menu-list">
+      <li><a href="../html/notions-de-base.html" class="link">Notions de base</a></li>
+      <li><a href="../html/lecture-de-notes.html" class="link">Lecture de notes</a></li>
+      <li><a href="../html/rythme-part-1.html" class="link">Rythme partie 1</a></li>
+      <li><a href="../html/rythme-part-2.html" class="link">Rythme partie 2</a></li>
+      <li><a href="../html/notions-complementaires.html" class="link">Notions +</a></li>
+      <li><a href="../html/intervals.html" class="link">Intervals</a></li>
+      <li><a href="../html/gammes.html" class="link">Gammes</a></li>
+    </ul>
+    <div class="menu-label bold">
+      Harmonie
+    </div>
+    <ul class="menu-list">
+      <li><a href="../html/accords.html" class="link">Accords</a></li>
+    </ul>
+    <div class="menu-label bold">
+      Exercices
+    </div>
+    <ul class="menu-list">
+      <li><a href="../html/exercice.html" class="link is-active">Solfège rythmique</a></li>
+      <li><a href="../html/resources.html" class="link">Resources</a></li>
+    </ul>
+  </aside>
+
+  <main class="exercice-rythme">
+
+    <div class="wrapper">
+
+      <div class="header">
+        <label for="noire">Noires</label>
+        <input type="checkbox" name="noire" id="noires" class="checkbox" checked>
+        <label for="noire">Croches</label>
+        <input type="checkbox" name="croches" id="croches" class="checkbox" checked>
+        <label for="noire">Doubles 1</label>
+        <input type="checkbox" name="doubles1" id="doubles-1" class="checkbox">
+        <label for="noire">Doubles 2</label>
+        <input type="checkbox" name="doubles2" id="doubles-2" class="checkbox">
+        <label for="noire">Doubles 3</label>
+        <input type="checkbox" name="doubles3" id="doubles-3" class="checkbox">
+      </div>
+
+      <div class="main-exercice">
+        <div class="images"></div>
+      </div>
+
+      <div class="names"></div>
+
+      <div class="footer">
+        <!-- <button class="btn">ECOUTER</button> -->
+        <button class="btn-reset">NOUVELLE MESURE</button>
+      </div>
+
+    </div>
+
+  </main>
+  <script src="../js/exercice.js"></script>
+</body>
+
+</html>

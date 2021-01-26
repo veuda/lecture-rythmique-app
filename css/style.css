@@ -1,10 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  font-family: 'Open Sans', 'Geneva', 'Tahoma', 'sans-serif';
   margin: 0;
   padding: 0;
+  color: #3c3c3c;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h3 {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-bottom: 1px solid #c8c8c8;
+  padding-bottom: 1rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.is-active {
+  background-color: whitesmoke;
+  color: black !important;
+}
+
+.pdf {
+  color: #da0202;
+  margin-right: .5rem;
+}
+
+.black {
+  color: black;
+}
+
+.download {
+  padding: 1rem 0;
+}
+
+.open {
+  left: 0 !important;
 }
 
 .exercice-rythme {
@@ -12,6 +60,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin-left: 250px;
 }
 
 .exercice-rythme .header {
@@ -23,16 +72,16 @@ body {
 }
 
 .exercice-rythme .header .checkbox {
-  margin-right: 1rem;
+  margin: 0 1rem 0 .5rem;
 }
 
-.exercice-rythme .main {
+.exercice-rythme .main-exercice {
   background-color: #fff;
   border-left: 3px solid #000;
   border-right: 3px solid #000;
 }
 
-.exercice-rythme .main .images {
+.exercice-rythme .main-exercice .images {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -41,7 +90,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   line-height: 50px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
   border-left: 3px solid #000;
   border-right: 3px solid #000;
@@ -62,4 +111,122 @@ body {
   color: #fff;
   border: none;
   cursor: pointer;
+}
+
+.menu {
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  left: 0;
+  background-color: #fff;
+  border-right: 1px solid #b4b4b4;
+  padding: 1rem;
+  transition: .3s ease-in-out;
+}
+
+.menu .menu-icon {
+  position: absolute;
+  top: 1rem;
+  right: -3rem;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
+.menu .link-home {
+  display: block;
+  padding: .5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #3c3c3c;
+}
+
+.menu .menu-label {
+  padding: 1rem;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li .link {
+  display: block;
+  padding: .5rem 0 .5rem 2rem;
+  border-top: 1px solid gainsboro;
+  text-decoration: none;
+  color: #787878;
+}
+
+.menu ul li .link:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+@media (max-width: 700px) {
+  .menu {
+    left: -250px;
+  }
+  .menu .menu-icon {
+    display: block;
+  }
+}
+
+.main {
+  margin-left: 250px;
+  padding: 2rem;
+  transition: .3s ease-in-out;
+}
+
+.main .main-title {
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.main .bold {
+  font-weight: bold;
+}
+
+.main .audio {
+  padding-left: 1rem;
+}
+
+.main .link {
+  margin: 1rem 0;
+  color: #646464;
+}
+
+.main .link:hover {
+  color: black;
+}
+
+.main .list-link {
+  text-decoration: none;
+  color: #787878;
+}
+
+.main .list-link:hover {
+  color: black;
+}
+
+.main .footer {
+  text-align: center;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #c8c8c8;
+}
+
+@media (max-width: 700px) {
+  .main {
+    margin-left: 0;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  .main .menu-icon {
+    display: block;
+  }
 }
