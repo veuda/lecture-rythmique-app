@@ -4,21 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <!-- ICONS -->
   <script src="https://kit.fontawesome.com/42eee18e28.js" crossorigin="anonymous"></script>
-  <title>COURS DE MUSIQUE</title>
+
+  <title>Cours de musique</title>
 </head>
 
 <body>
   <aside class="menu">
-    <i class="fas fa-bars menu-icon"></i>
-    <a href="./index.html" class="link-home bold">COURS DE MUSIQUE</a>
+    <i class="fas fa-bars menu-icon js-icon"></i>
+    <div class="home-title">COURS DE MUSIQUE</div>
     <div class="menu-label bold">
       Solfège
     </div>
     <ul class="menu-list">
-      <li><a href="./html/notions-de-base.html" class="link">Notions de base</a></li>
+      <li><a href="../index.html" class="link is-active">Notions de base</a></li>
       <li><a href="./html/lecture-de-notes.html" class="link">Lecture de notes</a></li>
       <li><a href="./html/rythme-part-1.html" class="link">Rythme partie 1</a></li>
       <li><a href="./html/rythme-part-2.html" class="link">Rythme partie 2</a></li>
@@ -41,10 +42,47 @@
     </ul>
   </aside>
 
-  <main class="main">
-    <h1>Have Fun !!</h1>
+  <main class="main margin-left">
+     <h2 class="main-title">Notions de bases</h2>
+    <div class="download">
+      <i class="far fa-file-pdf pdf"></i><a href="../src/pdf/notions-de-base/notions-de-base.pdf" class="black" download="exercice_notes_reperes">Télécharger le cours</a>
+    </div>
+    <h3>1. La portée</h3>
+    <p>
+      La portée est l'ensemble des 5 lignes et 4 interlignes qui permet de représenter la hauteur des notes.<br>
+      La ligne du bas est la 1ère ligne, la ligne du haut est la 5ème ligne.<br>
+    </p>
+    <p>C'est sur la portée que l'on écrit la musique. Elle porte les notes.</p>
+    <img src="../src/img/notions-de-base/portee.jpg" alt="" srcset="">
+    <h3>2. La mesure</h3>
+    <p>
+      Elle permet de découper la partition en parties égales. Ce sont des repères visuels afin de faciliter la lecture.<br>
+      Ce sont les barres verticales qui délimite une mesure.
+    </p>
+    <img src="../src/img/notions-de-base/mesure.jpg" alt="" srcset="">
+    <h3>3. La clé de sol</h3>
+    <p>
+      C'est le signe graphique au début de la portée qui va nous permettre de déterminer le <span class="italic">sol</span> et de connaître la hauteur des notes en conséquence.<br>
+    </p>
+    <img src="../src/img/notions-de-base/cle.jpg" alt="" srcset="">
+    <p>
+      Elle concerne les notes aigues.<br>
+      La clé de sol est utilisé par le violon, la guitare, la flûte, la clarinette, le saxophone, la trompette...
+    </p>
+    <h3>3. La clé de fa</h3>
+    <p>
+      C'est le signe graphique au début de la portée qui va nous permettre de déterminer le <span class="italic">fa</span> et de connaître la hauteur des notes en conséquence.<br>
+    </p>
+    <img src="../src/img/notions-de-base/cle-de-fa.jpg" alt="" srcset="">
+    <p>
+      Elle concerne les notes graves.<br>
+      La clé de fa est utilisé par la contrebasse, la basse, le violoncelle, la main gauche des instruments à clavier (piano, clavecin)...
+    </p>
+    <footer class="footer">
+      © David PERRON - 2021
+    </footer>
   </main>
-  <script src="./js/menu.js"></script>
+  <script src="../js/menu.js"></script>
 </body>
 
 </html>
