@@ -12,7 +12,6 @@
 
 <body>
   <aside class="menu">
-    <i class="fas fa-bars menu-icon js-icon"></i>
     <div class="home-title bold">COURS DE MUSIQUE</div>
     <div class="menu-label bold">
       Solfège
@@ -25,7 +24,7 @@
       <li><a href="./rythme-part-2.html" class="link">Rythme partie 2</a></li>
       <li><a href="./notions-complementaires.html" class="link">Notions +</a></li>
       <li><a href="./intervals.html" class="link">Intervals</a></li>
-      <li><a href="./gammes.html" class="link">Gammes</a></li>
+      <li><a href="./gammes.html" class="link is-active">Gammes</a></li>
     </ul>
     <div class="menu-label bold">
       Harmonie
@@ -42,11 +41,16 @@
     </ul>
   </aside>
 
+  <header class="header">
+    <i class="fas fa-bars menu-icon js-icon"></i>
+    Cours de musique
+  </header>
+
   <main class="exercice-rythme">
 
     <div class="wrapper">
 
-      <div class="header">
+      <div class="header-exercice">
         <label for="noire">Noires</label>
         <input type="checkbox" name="noire" id="noires" class="checkbox" checked>
         <label for="noire">Croches</label>

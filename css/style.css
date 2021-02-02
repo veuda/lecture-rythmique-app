@@ -63,7 +63,7 @@ h3 {
   margin-left: 250px;
 }
 
-.exercice-rythme .header {
+.exercice-rythme .header-exercice {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +71,7 @@ h3 {
   font-size: 1.2rem;
 }
 
-.exercice-rythme .header .checkbox {
+.exercice-rythme .header-exercice .checkbox {
   margin: 0 1rem 0 .5rem;
 }
 
@@ -250,11 +250,14 @@ h3 {
   top: 1rem;
   color: black;
   cursor: pointer;
-  display: block;
+  display: none;
 }
 
 @media (max-width: 700px) {
   .header {
     display: block;
+  }
+  .menu-icon {
+    display: block !important;
   }
 }

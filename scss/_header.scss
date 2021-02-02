@@ -17,12 +17,15 @@
     top: 1rem;
     color: black;
     cursor: pointer;
-    display: block;
+    display: none;
   }
 }
 
 @media (max-width: 700px) {
   .header {
     display: block;
+  }
+  .menu-icon {
+    display: block !important;
   }
 }
