@@ -42,8 +42,15 @@
       display: block;
     }
     .main-title {
+      margin-top: 4rem;
       font-size: 1.3rem;
       text-align: center;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    .image {
+      width: 100%;
     }
   }
 }

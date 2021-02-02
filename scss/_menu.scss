@@ -1,21 +1,13 @@
 .menu {
   position: fixed;
   width: 250px;
-  height: 100vh;
+  height: 100%;
   left: 0;
   background-color: #fff;
   border-right: 1px solid rgb(180, 180, 180);
   padding: 1rem;
   transition: .3s ease-in-out;
-  .menu-icon {
-    position: absolute;
-    top: 1rem;
-    right: -3rem;
-    font-size: 2rem;
-    color: black;
-    cursor: pointer;
-    display: none;
-  }
+  overflow: auto;
   .home-title {
     padding: .5rem;
     text-align: center;
@@ -46,9 +38,7 @@
 
 @media (max-width: 700px) {
   .menu {
-    left: -250px;
-    .menu-icon {
-      display: block;
-    }
+    width: 100%;
+    left: -100%;
   }
 }
